@@ -1,3 +1,84 @@
-This is a Sample File
-For Demostration Purpose
-Functional Programming Example
+Java Functional Programming
+1.	List<Integer> numbers = List.of(12, 4, 5, 9, 22, 34, 7, 22, 12, 244);
+	List<String> courses = List.of("Spring MVC", "Spring Boot", 	"Javascript", "Spring Batch", "Java", "Python","Flask");
+1.	Sort the number
+2.	Sort and return unique number
+3.	Custom sort for strings
+4.	Sum of the result
+5.	Calculate Square of each element in the list
+6.	Filter words containing "Spring"
+7.	List even numbers
+8.	Calculate sum of numbers square
+9.	Sum of even numbers in the list
+
+2.	This are properties of the class
+	private String name;
+	private String 	category;
+	private int reviewScore;
+	private int noOfStudents;
+	List<Course> courses = 
+	List.of(
+	new Course("Spring", "Framework", 98, 20000),
+	new Course("Spring Boot", "Framework", 95, 18000), 
+	new Course("API", "Microservices", 97, 22000),
+	new Course("Microservices", "Microservices", 96, 25000),
+	new Course("FullStack", "FullStack", 91, 14000), 
+	new Course("AWS", "Cloud", 92, 21000),
+	new Course("Azure", "Cloud", 99, 21000), 
+	new Course("Docker", "Cloud", 92, 20000),
+	new Course("Kubernetes", "Cloud", 91, 20000));
+
+Find out this
+ Sort by Review Score
+1.	Sort by Review Score Reversed
+2.	Sort by no. of students then by review score
+3.	Skip first 2 elements of the list
+4.	Limit the returned list up to 3 elements
+5.	Combining skip & limit methods
+6.	Return elements up to a certain condition met
+7.	Drop all the elements in the list until the condition matches and go on
+8.	Last Element of the list after organizing by comparator
+9.	First Element of the list after organizing by comparator
+10.	Get the first element which matches the condition
+11.	Get any element which matches the condition
+12.	Total no. of students which match the condition
+13.	Avg no. of students which match the condition
+14.	Count no. of elements which match the condition
+15.	Return Map by Grouping the output by category
+16.	Get the list of Course Names only by category
+17.	Check if all elements match a condition
+18.	Check if none of the elements match a condition
+19.	Check if any element matches a condition
+
+
+3.	Code this function using stream
+
+1.	This is a reference type of array with wrapper class Integer so boxing & unboxing takes time
+2.	Better way to define the same array by Primitive, this also opens the possibility to do multiple tasks like sum, average, min, etc.
+3.	Generate stream of numbers 1-9
+4.	Generate stream of numbers 1-10
+5.	Generate stream of numbers with specific sequence
+6.	Calculating Sum with generated numbers in a specific sequence with peek method to print the sequence
+7.	Calculating sum of x^2, where x is the element of the stream
+8.	Collect primitive int into a list [boxed is used to convert primitive type to Integer wrapper class]
+9.	Calculate the product of numbers from 1 to 9
+10.	Calculate the product of numbers from 1 to 30 (using long)
+11.	Calculate the product of numbers from 1 to 50 (using BigInteger)
+4.	List<String> courses = List.of("Spring", "Spring Boot", "API", "Microservices", "FullStack", "AWS", "Azure","Docker", "Kubernetes");
+	List<String> course2 = List.of("Spring", "Spring Boot", "API", "Microservices", 	"FullStack", "AWS", "Azure","Docker", "Kubernetes");
+1.	Join the array using stream with , between
+2.	Stream of String[] -> Stream of String
+3.	Get Unique pair using flatmap
+
+
+5.	List<String> c = List.of("Spring", "Spring Boot", "API", "Microservices", "FullStack", "AWS", "Azure","Docker", "Kubernetes");
+List<String> courses = new ArrayList<>(c);
+
+	1. Parallel computing enhancement for stream
+	2. Calculate the sum of numbers from 1 to 1,000,000,000 (single-threaded)
+	3. Calculate the sum of numbers from 1 to 1,000,000,000 (parallel execution)
+	4. Replace all strings using functional programming to uppercase
+	5. Print the modified list of courses
+	6. Remove elements using functional programming if the list length is less than 6
+	7. Print the updated list of courses
+
